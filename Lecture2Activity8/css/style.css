@@ -1,0 +1,23 @@
+/*
+Style sheet for CPSC 1520-Week 2
+The same style sheet has been copied into the different activities for Week2
+Author: Oveeyen Moonian
+Date: 09 May 2022
+*/
+
+
+h1,
+h2 {
+
+    color: yellow;
+    text-align: center;
+    background-color: blue;
+    font-weight: bold;
+    border: 5px solid black;
+
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
