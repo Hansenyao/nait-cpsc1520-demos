@@ -1,0 +1,29 @@
+h1 {
+
+    color: yellow;
+    text-align: center;
+    background-color: blue;
+    font-weight: bold;
+    border: 5px solid black;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button {
+    background-color: cyan;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 50px;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+li {
+    font-size: 1.2em;
+}
