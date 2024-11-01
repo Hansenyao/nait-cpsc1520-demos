@@ -11,8 +11,13 @@ let capitalsArray=["Ottawa","London","Paris","Madrid","Rome","New Delhi", "Beiji
 let countriesArray= ["Canada","England", "France", "Spain", "Italy", "India", "China", "Japan", "USA", "Germany", "South Africa", "Egypt"];
 /*
   The event listener of the click event of the button,
-
-document.querySelector("#displayCapitals").addEventListener("click", ()=> {
-  
- 
+*/
+document.querySelector("#displayPairs").addEventListener("click", ()=> {
+    let capitalsList = document.querySelector(".capitals");
+    let resultArray = capitalsArray.map((x, index) => `<li>${x} - ${countriesArray[index]}</li>`)
+  //
+    capitalsList.innerHTML = "";
+    resultArray.forEach((item) => {
+      capitalsList.innerHTML += item;
+    })
 });

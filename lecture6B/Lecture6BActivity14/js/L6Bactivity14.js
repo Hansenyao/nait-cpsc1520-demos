@@ -14,6 +14,11 @@ let capitalsArray=["Ottawa","London","Paris","Madrid","Rome","New Delhi", "Beiji
 */
 
 document.querySelector("#displayCapitals").addEventListener("click", ()=> {
-  
-  
+  let capitalsList = document.querySelector(".capitals");
+  let result = capitalsArray.map((capital) => `<li>${capital}</li>`);
+  //
+  capitalsList.innerHTML = "";
+  result.forEach((item) => {
+    capitalsList.innerHTML += item;
+  })
 });
