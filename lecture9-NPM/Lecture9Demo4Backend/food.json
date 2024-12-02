@@ -1,0 +1,11 @@
+{
+    "newFood": [
+        {
+            "sushi": 30,
+            "noodle": 20,
+            "friedrice": 17,
+            "steak": 23,
+            "briyani": 14
+        }
+    ]
+}

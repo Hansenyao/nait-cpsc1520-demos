@@ -69,4 +69,21 @@ carArray = [
 
 let result = [];
 
+let placeHolderElem = document.querySelector("#placeHolder1");
+
 //The displayTemplate function
+const displayTemplate = (str) => {
+    placeHolderElem.innerHTML += `<p>${str}</p>`;
+}
+
+document.querySelector("#button1").addEventListener("click", () => {
+    placeHolderElem.innerHTML = "";
+    // Option 1:
+    //result = carArray.map(x => `<p>Id: ${x.Id}, make/model: ${x.make}/${x.model}, color: ${x.color}, engine: ${x.engineCapacity}L, cost: $${x.cost}</p>`);
+    // Option 2:
+    result = carArray.map(x => `<p>Id: ${x["Id"]}, make/model: ${x["make"]}/${x["model"]}, 
+                                color: ${x["color"]}, engine: ${x["engineCapacity"]}L, cost: $${x["cost"]}</p>`);
+    result.forEach((element) => {
+        displayTemplate(element);
+    })
+})
